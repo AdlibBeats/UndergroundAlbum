@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GZ0-Uk-RHk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Pregnancy View Controller-->
+        <scene sceneID="gXX-8T-1Na">
+            <objects>
+                <viewController id="S8p-4X-dxG" customClass="MyPregnancyViewController" customModule="UndergroundAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifS-os-2aK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYP-dj-yG9">
+                                <rect key="frame" x="111" y="314.5" width="153.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83671714049724955" green="1" blue="0.10750975527890494" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DYP-dj-yG9" firstAttribute="centerY" secondItem="ifS-os-2aK" secondAttribute="centerY" id="vRi-Ug-Gt1"/>
+                            <constraint firstItem="DYP-dj-yG9" firstAttribute="centerX" secondItem="ifS-os-2aK" secondAttribute="centerX" id="z73-j9-BcB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jSG-Xh-UjV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tUt-hM-czl">
+                        <barButtonItem key="leftBarButtonItem" title="Open" id="ckg-WA-kNW">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBarBattonItem" destination="ckg-WA-kNW" id="EY5-OS-dEs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRL-GK-hnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="124.58770614692655"/>
+        </scene>
+        <!--Swipe Navigation Controller-->
+        <scene sceneID="Ij3-U0-4OK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GZ0-Uk-RHk" customClass="SwipeNavigationController" customModule="UndergroundAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bsl-aC-PKq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S8p-4X-dxG" kind="relationship" relationship="rootViewController" id="mvw-J0-qc9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBX-1R-qXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
